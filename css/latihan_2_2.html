@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Div dan Span</title>
+    <link rel="icon" type="img/png" href="icon.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Judul/Header Website</h1>
+    </div>
+    <div id="main">
+        <div id="link">
+            <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Tokyo</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <h2>Form Pendaftaran Mahasiswa Baru</h2>
+            <form action="proses.php" method="post">
+                <label for="name">Nama Lengkap :</label>
+                <input type="text" id="name" name="nama" required><br><br>
+                <label for="tgllahir">Tempat/ Tanggal Lahir :</label>
+                <input type="text" id="tempat_lahir" name="tempat_lahir" required>
+                <input type="date" id="tanggal_lahir" name="tanggal_lahir" min="1989-01-01" max="1994-12-31" placeholder="Pilih tahun antara 1989 - 1994"><br><br>
+                <label for="agama">Agama :</label>
+                <select name="agama" required>
+                    <optgroup label="Agama"></optgroup>
+                    <option value="">-PILIH-</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                    <option value="Konghucu">Konghucu</option>
+                </select><br><br>
+                <label for="jenis_kelamin">Jenis Kelamin :</label>
+                <input type="radio" name="jenis_kelamin" value="laki - laki" required>Laki - Laki
+                <input type="radio" name="jenis_kelamin" value="perempuan">Perempuan<br><br>
+                
+                <label for="ijazah">No. ijazah SMA/MA :</label>
+                <input type="text" id="ijazah" name="ijazah"required><br><br>
+
+                <label for="foto">Foto ( Ukuran Maks.20 KB):</label>
+                <input type="file" id="foto" name="foto"><br><br>
+
+                <label for="ayah">Nama Ayah :</label>
+                <input type="text" id="ayah" name="ayah"><br><br>
+
+                <label for="ibu">Nama Ibu :</label>
+                <input type="text" id="ibu" name="ibu"><br><br>
+
+                <label for="alamat">Alamat Rumah :</label>
+                <textarea id="alamat" name="alamat" rows="4"></textarea><br><br>
+
+                <label for="telp">No. Telp:</label>
+                <input type="text" id="telp" name="telp"><br><br>
+                
+                <label for="sekolahasal">Nama Sekolah Asal :</label>
+                <input type="text" id="sekolahasal" name="sekolahasal"><br><br>
+
+                <label for="alamat_sekolah">Alamat Sekolah Asal :</label>
+                <textarea id="alamat_sekolah" name="alamat_sekolah" rows="4"></textarea><br><br>
+
+                <label for="jurusan">Jurusan Dipilih :</label>
+                <select name="jurusan">
+                    <optgroup label="jurusan"></optgroup>
+                    <option value="">-PILIH-</option>
+                    <option>Komputerisasi Akuntansi</option>
+                    <option>Adminsitrasi Bisnis</option>
+                    <option>Teknik Komputer Kontrol</option>
+                    <option>Teknik Listrik</option>
+                    <option>Mesin Otomotif</option>
+                    <option>Perkeretaapian</option>
+                    <option>Teknologi Informasi</option>
+                    <option>Akuntansi</option>
+                </select><br><br>
+                <label>Tahu Informasi ini dari :</label>
+                <input type="checkbox" name="Informasi[]" value="koran">Koran 
+                <input type="checkbox" name="Informasi[]" value="Website">Website
+                <input type="checkbox" name="Informasi[]" value="Televisi">Televisi
+                <input type="checkbox" name="Informasi[]" value="Radio">Radio
+                <input type="checkbox" name="Informasi[]" value="Teman">Teman<br><br>
+
+                <button type="submit">DAFTAR</button>
+                <button type="reset">BATAL</button>
+               
+            </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p><i>copyright@IisIstiqomah_243307105</i></p>
+    </div>
+</body>
+</html>
